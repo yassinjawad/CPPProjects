@@ -1,7 +1,11 @@
 // pre- processor directives
 #include <iostream>
+#include <new>
 
 #include "./headers/BasicIo.h"
+#include "./headers/Decisions.h"
+#include "./headers/Loops.h"
+#include "./headers/Functions.h"
 // in C++ namespace is a collection of related functions,
 // classes, objets, and variables
 
@@ -19,6 +23,28 @@
 using namespace std;
 
 int main() {
+
+    // int i, n;
+    // int * p;
+    // cout << "How many numbers would you like to type?";
+    // cin >> i;
+    // // this line of code is dynamically allocating memory
+    // p = new (nothrow) int[i];
+    // if (p == nullptr){
+    //     cout << "Error: mamory could not be allocated";
+    // } else {
+    //     for (n = 0; n < i; n++) {
+    //         cout << "Enter number: ";
+    //         cin >> p[n];
+    //     }
+    //     cout << "You have entered: ";
+    //     for (n = 0; n < i; n++) {
+    //         cout << p[n] << ", ";
+    //     }
+    //     // this line of code is deallocating the memory
+    //     delete[] p;
+    // }
+
     // in order to use a c++ object, like cout, we need to
     // specify that it belongs to the std namespace.
     // one way to specify is by using the scope resolution
@@ -28,5 +54,18 @@ int main() {
     // cout << "Hello World!";
 
     /* Basic Input Output */
-    output();
+    // output();
+    // input();
+
+    /* Decisions */
+    // decisions1();
+
+    /* Loops */
+    // loops1();
+
+string student = "Yassin Jawad";
+string language = "C++";
+string programmer = "Bjarne Stroustoup";
+congratulate1(student, language, programmer);
+    return 0;
 }
