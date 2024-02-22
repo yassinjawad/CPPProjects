@@ -3,6 +3,7 @@
 // #include <stdio.h>
 #include <string>
 
+// use C++ standard library namespace
 using namespace std;
 
 #define FAHRENHEIT(temp) (temp * 1.8 + 32);

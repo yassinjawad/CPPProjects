@@ -6,6 +6,7 @@
 #include "./headers/Decisions.h"
 #include "./headers/Loops.h"
 #include "./headers/Functions.h"
+#include "./headers/Structs.h"
 // in C++ namespace is a collection of related functions,
 // classes, objets, and variables
 
@@ -63,9 +64,20 @@ int main() {
     /* Loops */
     // loops1();
 
-string student = "Yassin Jawad";
-string language = "C++";
-string programmer = "Bjarne Stroustoup";
-congratulate1(student, language, programmer);
-    return 0;
+// string student = "Yassin Jawad";
+// string language = "C++";
+// string programmer = "Bjarne Stroustoup";
+// congratulate1(student, language, programmer);
+
+/* structs */
+accessStructMembers();
+
+PersonType p;
+
+p.heightInMeters = 1.8;
+p.weightInKilos = 96;
+
+cout << "Computed BMI is " << bodyMassIndex(p) << endl;
+
+return 0;
 }
